@@ -16,5 +16,7 @@ screen.orientation.addEventListener('change', () => {
 
 printSizes();
 
+console.log("Orientation: ", screen.orientation);
+
 
 // document.querySelector('#label').innerText = "ciao";
