@@ -11,10 +11,10 @@ function printSizes() {
 
 screen.orientation.addEventListener('change', () => {
   printSizes();
-})
+});
 
 
 printSizes();
 
 
-document.querySelector('#label').innerText = "ciao";
+// document.querySelector('#label').innerText = "ciao";
