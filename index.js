@@ -18,6 +18,6 @@ function printSizes() {
 }
 
 
-window.addEventListener('orientationchange', () => {
+screen.orientation.addEventListener('change', () => {
   printSizes();
 })
