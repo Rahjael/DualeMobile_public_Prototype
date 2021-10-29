@@ -15,3 +15,6 @@ screen.orientation.addEventListener('change', () => {
 
 
 printSizes();
+
+
+document.querySelector('#label').innerText = "ciao";
