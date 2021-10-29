@@ -11,7 +11,8 @@ function printSizes() {
 
 screen.orientation.addEventListener('change', (event) => {
   printSizes();
-  document.querySelector('#angle').innerText = "event";
+  document.querySelector('#angle').innerText = event;
+  document.querySelector('#third').innerText = "event";
 });
 
 
