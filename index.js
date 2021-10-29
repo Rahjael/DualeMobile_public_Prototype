@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 function getSizes() {
   return {width: window.innerWidth, height: window.innerHeight}
 }
@@ -21,3 +12,6 @@ function printSizes() {
 screen.orientation.addEventListener('change', () => {
   printSizes();
 })
+
+
+printSizes();
