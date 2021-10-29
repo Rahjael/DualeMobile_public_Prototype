@@ -5,7 +5,7 @@ function getSizes() {
 function printSizes() {  
   const h1 = document.querySelector('#label');
   const sizes = getSizes();
-  h1.innerText = sizes.width + "x" + sizes.height;
+  h1.innerText = sizes.width + "x" + sizes.height + " " + screen.orientation;
 }
 
 
