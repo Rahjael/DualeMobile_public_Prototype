@@ -26,6 +26,8 @@ if(window.PointerEvent) {
 this.handleGestureStart = function(event) {
   event.preventDefault();
 
+  console.log("handleGestureStart called");
+
   if(event.touches && event.touches.length > 1) {
     return;
   }
@@ -48,6 +50,9 @@ this.handleGestureStart = function(event) {
 // Handle end gestures
 this.handleGestureEnd = function(event) {
   event.preventDefault();
+
+  
+  console.log("handleGestureEnd called");
 
   if(event.touches && event.touches.length > 0) {
     return;
@@ -73,6 +78,9 @@ this.handleGestureEnd = function(event) {
 function getGesturePointFromEvent(event) {
   var point = {};
 
+  
+  console.log("getGesturePointFromEvent called");
+
   if(event.targetTouches) {
     // Prefer Touch Events
     point.x = event.targetTouches[0].clientX;
@@ -89,6 +97,9 @@ function getGesturePointFromEvent(event) {
 
 this.handleGestureMove = function (event) {
   event.preventDefault();
+
+  
+  console.log("handleGestureMove called");
 
   if(!initialTouchPos) {
     return;
@@ -107,6 +118,10 @@ this.handleGestureMove = function (event) {
 
 
 function onAnimFrame() {
+
+  console.log("onAnimFrame called");
+
+
   if(!rafPending) {
     return;
   }
