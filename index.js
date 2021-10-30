@@ -33,7 +33,7 @@ console.log(bluSquare);
 
 
 
-
+document.querySelector('#angle').innerText = window.PointerEvent;
 
 
 
