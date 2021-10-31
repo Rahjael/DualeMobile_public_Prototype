@@ -14,6 +14,8 @@ function highlightCenterImage() {
     y: window.innerHeight / 2
   }
 
+  document.querySelector('#debug-info').innerText = `(${centerPoint.x}, ${centerPoint.y})`
+
   // Look for center row
   let rows = Array.from(document.querySelectorAll('.photo-grid-row'));
   // console.log(rows);
