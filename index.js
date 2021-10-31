@@ -3,8 +3,8 @@
 
 
 
-function beginSliding(e) {
-  bluSquare.onpointermove = slide;
+function beginMoving(e) {
+  bluSquare.onpointermove = moveSquare;
   bluSquare.setPointerCapture(e.pointerId);
 }
 
@@ -13,7 +13,7 @@ function stopSliding(e) {
   bluSquare.releasePointerCapture(e.pointerId);
 }
 
-function slide(e) {
+function moveSquare(e) {
   bluSquare.style.transform = `translate(${e.clientX - bluSquare.offsetLeft}px, ${e.clientY}px)`;
 
   document.querySelector('#label').innerText = `${e.clientX} x ${e.clientY}`;

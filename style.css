@@ -9,13 +9,23 @@
 body {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-#square {
-  position: fixed;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(51, 48, 194);
+#photo-grid {
+  /* position: absolute; */
+  margin: 2vmax;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.photo-grid-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.photo-grid-img {
+  margin: 1vh;
+  
 }
